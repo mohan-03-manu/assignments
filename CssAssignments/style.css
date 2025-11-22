@@ -1,0 +1,105 @@
+body{margin:"0";
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .card1{
+           text-align: center;
+           border: 1px solid lightgray;
+           width: 300px;
+           padding: 10px;
+           margin: 15px auto;
+           border-radius: 15px;
+          } 
+    .img1{
+          width: 50%;
+          border-radius: 15px;
+
+          } 
+    .btn1{
+           border: 1px solid blue;
+           width: 80%;
+           padding: 3px;
+           margin: 10px 10px;
+           border-radius: 7px;
+           
+         }
+    .btn2{
+           width: 80%;
+           padding: 5px;
+           margin: 10px 10px;
+           border-radius: 7px;
+           border: none;
+           background-color: blue;
+           color: white;
+         }
+
+    .card2{
+            border: 1px solid lightgray;
+            text-align: center;
+            width: 340px;
+            padding: 12px;
+            margin: 120px auto;
+            border-radius: 15px;
+         }
+.call-emoji{
+       margin-bottom:0;
+}
+.option-1{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       background-color: #eee;
+       padding: 0 10px;
+       margin-bottom: 15px;
+       border-radius: 15px;
+}
+
+.option-flex{
+       display: flex;
+       gap: 15px;
+}
+   
+.option-2{
+       display: flex;
+       align-items: center;
+       background-color: #eee;
+       padding: 0 10px;
+       border-radius: 15px;
+       gap: 15px;
+}
+.text{
+       font-size: 12px;
+       color: rgb(78, 92, 103);
+}
+
+    .card3{
+            width: 350px;
+            text-align: center;
+            border: 1px solid lightgray;
+            border-radius: 15px;
+            margin: 30px auto;
+          }
+          .option3{
+              display: flex;
+              justify-content: space-between;
+              padding: 0 10px;
+              border: 1px solid blueviolet;
+              border-radius: 15px;
+
+          }
+
+          .text3{
+              font-size: 14px;
+              color: rgb(85, 93, 100);
+          }
+
+
+          .btn-credit{
+             background-color: blue;
+             color: white;
+             padding: 5px 50px;
+            border-radius: 15px;   
+            border: none;
+          }
+
+          /*  */
