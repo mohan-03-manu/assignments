@@ -1,0 +1,10 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+body{
+    background-color: #f5f5f5;
+} */
