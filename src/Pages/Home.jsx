@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect } from "react";
 
 export default function Home() {
     useEffect(()=>{
@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     <div className="mt-24">
-      <h1 className="text-center text-2xl font-bold">This is home page</h1>
+      <h1 className="text-center text-2xl font-bold">This is profile page</h1>
     </div>
     </>
   )

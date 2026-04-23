@@ -1,14 +1,22 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/cartSlice";
+
 export default function Details() {
+  const dispatch = useDispatch();
   let [product , setProduct] = useState({})
   let {id} = useParams()
   useEffect (()=>{
   axios.get(`https://fakestoreapi.com/products/${id}`).then((product)=>{
     setProduct(product.data)
     })
-  })
+  }, [id])
+
+  function handleAddToCart(){
+    dispatch(addToCart(product))
+  }
   return (
     <>
     <div className=" mt-24  w-[800px] mx-auto border p-4 rounded-md bg-white shadow-sm hover:shadow-lg hover:translate-y-1 transition-all duration-300 ">
@@ -20,7 +28,7 @@ export default function Details() {
           <p className="font-semibold text-lg my-2">₹{Math.floor( product.price * 92)}</p>
             <div className="flex gap-5">
               <button className="bg-orange-500 hover:bg-orange-600 text-white border border-orange-600 font-semibold hover:shadow-lg px-6 py-3 rounded-lg transition-all duration-300">Buy now</button>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white border border-orange-500 font-semibold hover:shadow-lg px-6 py-3 rounded-lg transition-all duration-300">Add to Cart 🛒</button>
+              <button onClick={handleAddToCart} className="bg-orange-500 hover:bg-orange-600 text-white border border-orange-500 font-semibold hover:shadow-lg px-6 py-3 rounded-lg transition-all duration-300">Add to Cart 🛒</button>
             </div>
         </div>
       </div>

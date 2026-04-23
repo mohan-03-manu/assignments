@@ -1,23 +1,19 @@
-import { Link , Routes , Route} from "react-router-dom"
-import Home from "./Pages/Home"
-import Details from "./Pages/Details"
-import Products from "./Pages/Products"
+import { Link , Routes , Route} from "react-router-dom";
+import Home from "./Pages/Home";
+import Details from "./Pages/Details";
+import Products from "./Pages/Products";
+import Navbar from "./Components/Navbar";
+import Cart from "./Pages/Cart";
+
 export default function App() {
   return (
     <>
-    <div className="border-b py-4 px-28 flex justify-between">
-      <Link className="font-semibold text-md" to='/'>API's and UseEffect</Link>
-      
-      <div className="flex gap-4">
-       <Link to='/'>Home</Link>
-       <Link to='/details'>Details</Link>
-      </div>
-
-    </div>
+    <Navbar />
 
     <Routes>
      <Route path="/" element={<Products />} />
      <Route path="/details/:id" element={<Details />} />
+     <Route path="/cart" element={<Cart />} />
     </Routes>
     </>
   )
